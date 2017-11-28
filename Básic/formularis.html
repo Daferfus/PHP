@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form name="form1" action="resultados.php" method="POST" ENCTYPE="multipart/form-data">
+            <input TYPE = "checkbox" NAME="extras[]" VALUE="garaje" CHECKED>Garaje;
+            <input TYPE = "checkbox" NAME="extras[]" VALUE="piscina">Piscina;
+            <input TYPE = "checkbox" NAME="extras[]" VALUE="jardin">Jardin;
+            
+            Color:
+            
+            <select name="Color" size="3">
+                <option value = "rojo" SELECTED>Rojo
+                <option value = "amarillo" SELECTED>Amarillo
+                <option value = "verde" SELECTED>Verde
+            </select>
+            
+            Idiomes:
+            
+            <select multiple size="3" name="Idiomes" >
+              <option value = "ingles" SELECTED>Ingles
+              <option value = "frances" SELECTED>Frances
+              <option value = "alema" SELECTED>Alema
+              <option value = "holandes" SELECTED>Holandes
+            </select>
+            
+            Comentario:
+            
+            <TEXTAREA COLS="50" ROWS="4" NAME="comentari">
+            Este libro me parece...
+            </TEXTAREA>
+            
+            <input type="file" name="putjar fitxer" />
+            <br>
+            <input type="submit" value="Enviar" name="Enviar" />
+            
+    
+        </form>
+    </body>
+</html>
